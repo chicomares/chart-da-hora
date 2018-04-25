@@ -9,7 +9,7 @@
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'From');
         data.addColumn('string', 'To');
-        data.addColumn('number', 'Weight');
+        data.addColumn('number', 'Migração');
         data.addRows([
           [ 'DEM 2014', 'DEM 2018', 20 ],
 [ 'DEM 2014', 'PP 2018', 1 ],
@@ -161,14 +161,19 @@
         chart.draw(data, options);
       }
     </script>
+    <style>
+      p { left: 150px;
+      }
+    </style>
   </head>
   <body>
-    <font face="Calibri"><h1 align="center">O fluxo da política</h1></font>
+    <font face="Calibri"><h1 align="center">O fluxo da política1</h1></font>
     
-   <div align="center" style="width: 900px"><font face="Calibri" size=3> 
+   <div align="left" style="width: 1500px"><font face="Calibri" size=3> 
 
 31% dos atuais deputados federais mudaram de partido desde que as últimas eleições, em 2014. Nesse período, houve duas "janelas" de troca de partido, três partidos foram criados (Rede, PMB e Novo) e dois mudaram de nome (PTN virou Podemos, PTdoB virou Avante).
      </div></font>
+    <br>
      <div id="sankey_basic" style="width: 1500px; height: 6000px" align="center";></div>
   </body>
 </html>
